@@ -171,7 +171,7 @@ def a_star_h2(node_list, goal):
 
         node_list = successor_state + node_list
 
-        node_list = sorted(node_list, key = lambda x:x[2]) #we are sorting the nodelist based on the heuristic value in the 2 position of the array
+        node_list = sorted(node_list, key = lambda x:x[2]) #we are sorting the nodelist based on the function f(x) value in the 2 position of the array
 
         f_c += 1 #increasing the depth count
         n_c = n_c + len(successor_state)
